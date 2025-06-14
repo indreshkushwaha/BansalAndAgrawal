@@ -48,6 +48,37 @@
         .hamburger.open .line3 {
             transform: rotate(-45deg) translate(7px, -6px);
         }
+
+        /* Jotform Logo Hide Overlay */
+        .jotform-container {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .jotform-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background: white;
+            z-index: 10;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+        }
+        
+        /* Responsive adjustments for the overlay */
+        @media (max-width: 768px) {
+            .jotform-overlay {
+                height: 45px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .jotform-overlay {
+                height: 40px;
+            }
+        }
     </style>
 </head>
 <body class="w-full h-full m-0 p-0 bg-gray-50 min-h-screen overflow-x-hidden" x-data="{ mobileMenuOpen: false }">
@@ -211,25 +242,26 @@
     <section>
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <!-- Contact Form -->
+          <!-- Contact Form with Jotform Logo Hidden -->
           <div class="flex flex-col items-center justify-center border border-dashed border-gray-400 rounded-lg p-8 bg-gray-50">
-            
-            
-    <iframe
-      id="JotFormIFrame-251642525519054"
-      title="Contact Us "
-      onload="window.parent.scrollTo(0,0)"
-      allowtransparency="true"
-      allow="geolocation; microphone; camera; fullscreen; payment"
-      src="https://form.jotform.com/251642525519054"
-      frameborder="0"
-      style="min-width:100%;max-width:100%;height:539px;border:none;"
-      scrolling="no"
-    >
-    </iframe>
-    <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
-    <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-251642525519054']", "https://form.jotform.com/")</script>
-  
+            <div class="jotform-container w-full">
+                <iframe
+                    id="JotFormIFrame-251642525519054"
+                    title="Contact Us "
+                    onload="window.parent.scrollTo(0,0)"
+                    allowtransparency="true"
+                    allow="geolocation; microphone; camera; fullscreen; payment"
+                    src="https://form.jotform.com/251642525519054"
+                    frameborder="0"
+                    style="min-width:100%;max-width:100%;height:539px;border:none;"
+                    scrolling="no"
+                >
+                </iframe>
+                <!-- White overlay to hide Jotform branding -->
+                <div class="jotform-overlay"></div>
+            </div>
+            <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
+            <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-251642525519054']", "https://form.jotform.com/")</script>
           </div>
       
           <!-- Address and Map -->
