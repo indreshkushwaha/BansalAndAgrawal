@@ -60,11 +60,20 @@
             bottom: 0;
             left: 0;
             right: 0;
-            height: 60px;
+            height: 46px;
             background: white;
             z-index: 10;
-            border-bottom-left-radius: 0px;
-            border-bottom-right-radius: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 10px;
+        }
+        
+        .jotform-disclaimer {
+            color: #6b7280;
+            font-size: 11px;
+            text-align: center;
+            line-height: 1.3;
         }
         
         /* Responsive adjustments for the overlay */
@@ -268,8 +277,12 @@
                         scrolling="no"
                     >
                     </iframe>
-                    <!-- White overlay to hide Jotform branding -->
-                    <div class="jotform-overlay"></div>
+                    <!-- White overlay with disclaimer to hide Jotform branding -->
+                    <div class="jotform-overlay m-2 ">
+                        <div class="jotform-disclaimer">
+                            * We review all applications carefully and will contact qualified candidates.
+                        </div>
+                    </div>
                 </div>
                 <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
                 <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-251642474004450']", "https://form.jotform.com/")</script>

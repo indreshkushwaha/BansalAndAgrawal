@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Bansal & Agrawal Chartered Accountants</title>
+    <title>Join Our Team - Bansal & Agrawal Chartered Accountants</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="css/style.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
@@ -60,11 +60,21 @@
             bottom: 0;
             left: 0;
             right: 0;
-            height: 60px;
+            height: 46px;
             background: white;
             z-index: 10;
-            border-bottom-left-radius: 0px;
-            border-bottom-right-radius: 0px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 10px;
+        }
+        
+        .jotform-disclaimer {
+            color: #6b7280;
+            font-size: 11px;
+            text-align: center;
+            line-height: 1.3;
         }
         
         /* Responsive adjustments for the overlay */
@@ -85,7 +95,7 @@
     <!-- Header Container -->
     <header class="w-full z-50">
         <!-- Top Header: hides on scroll -->
-        <div id="topHeader" class="transition-transform duration-300 bg-white shadow w-full">
+        <div id="topHeader" class="transition-transform duration-300 bg-white shadow">
             <div class="w-full px-4 hidden md:block py-2 lg:py-1">
                 <!-- Mobile Layout -->
                 <div class="flex flex-col space-y-3 md:hidden">
@@ -166,7 +176,7 @@
         </div>
 
         <!-- Navigation: always sticky -->
-        <nav id="navbar" class="bg-[#16597D] sticky top-0 z-50 shadow w-full">
+        <nav id="navbar" class="bg-[#16597D] sticky top-0 z-50 shadow">
             <div class="max-w-7xl mx-auto px-4">
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex justify-center items-center">
@@ -175,8 +185,8 @@
                         <li><a href="about.html" class="hover:text-blue-300 transition-colors duration-200 py-2 px-1">About</a></li>
                         <li><a href="service.html" class="hover:text-blue-300 transition-colors duration-200 py-2 px-1">Services</a></li>
                         <li><a href="sector.html" class="hover:text-blue-300 transition-colors duration-200 py-2 px-1">Sectors we support</a></li>
-                        <li><a href="team.html" class="hover:text-blue-300 transition-colors duration-200 py-2 px-1">Join our Team</a></li>
-                        <li><a href="contact.html" class="hover:text-blue-300 transition-colors duration-200 py-2 px-1 text-blue-300">Contact Us</a></li>
+                        <li><a href="team.html" class="hover:text-blue-300 transition-colors duration-200 py-2 px-1 text-blue-300">Join our Team</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-300 transition-colors duration-200 py-2 px-1">Contact Us</a></li>
                     </ul>
                 </div>
 
@@ -217,8 +227,8 @@
                         <li><a href="about.html" class="block px-4 py-3 text-sm font-medium hover:bg-blue-700 transition-colors duration-200" @click="mobileMenuOpen = false">About</a></li>
                         <li><a href="service.html" class="block px-4 py-3 text-sm font-medium hover:bg-blue-700 transition-colors duration-200" @click="mobileMenuOpen = false">Services</a></li>
                         <li><a href="sector.html" class="block px-4 py-3 text-sm font-medium hover:bg-blue-700 transition-colors duration-200" @click="mobileMenuOpen = false">Sectors we support</a></li>
-                        <li><a href="team.html" class="block px-4 py-3 text-sm font-medium hover:bg-blue-700 transition-colors duration-200" @click="mobileMenuOpen = false">Join our Team</a></li>
-                        <li><a href="contact.html" class="block px-4 py-3 text-sm font-medium hover:bg-blue-700 transition-colors duration-200 bg-blue-700 border-b-0" @click="mobileMenuOpen = false">Contact Us</a></li>
+                        <li><a href="team.html" class="block px-4 py-3 text-sm font-medium hover:bg-blue-700 transition-colors duration-200 bg-blue-700" @click="mobileMenuOpen = false">Join our Team</a></li>
+                        <li><a href="contact.html" class="block px-4 py-3 text-sm font-medium hover:bg-blue-700 transition-colors duration-200 border-b-0" @click="mobileMenuOpen = false">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -227,71 +237,61 @@
 
     <!-- Hero Section -->
     <section class="relative h-[50vh] w-full overflow-hidden">
-        <img src="images/index/6cb9d67272394ac18a9856724ffaa614.jpg" alt="Contact Background" class="absolute inset-0 w-full h-full object-cover object-center" />
+        <img src="images/index/Teams photo.jpg" alt="Team Background" class="absolute inset-0 w-full h-full object-cover object-center" />
         <div class="absolute inset-0 bg-black bg-opacity-0"></div>
         <div class="relative z-10 flex items-center justify-center h-full">
             <h2 class="text-3xl md:text-4xl font-semibold text-white">
-                
+             
             </h2>
         </div>
     </section>
-<br>
-<br>
-<br>
-<br>
-    <section>
-    <div class="container mx-auto px-4">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <!-- Contact Form with Jotform Logo Hidden -->
-          <div class="flex flex-col items-center justify-center border border-dashed border-gray-400 rounded-lg p-8 bg-gray-50">
-            <div class="jotform-container w-full">
-                <iframe
-                    id="JotFormIFrame-251642525519054"
-                    title="Contact Us "
-                    onload="window.parent.scrollTo(0,0)"
-                    allowtransparency="true"
-                    allow="geolocation; microphone; camera; fullscreen; payment"
-                    src="https://form.jotform.com/251642525519054"
-                    frameborder="0"
-                    style="min-width:100%;max-width:100%;height:539px;border:none;"
-                    scrolling="no"
-                >
-                </iframe>
-                <!-- White overlay to hide Jotform branding -->
-                <div class="jotform-overlay"></div>
-            </div>
-            <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
-            <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-251642525519054']", "https://form.jotform.com/")</script>
-          </div>
-      
-          <!-- Address and Map -->
-          <div class="flex flex-col space-y-6">
+
+    <!-- Team Content -->
+    <section class="w-full py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            
+            <!-- Left: Text Description -->
             <div>
-              <h3 class="text-xl font-bold">Our Address</h3>
-              <p class="text-600 font-semibold italic">Bansal's</p>
-              <p class="text-gray-700">G-5, Ground Floor, <br>
-                59-EB, Scheme No. 140, Indore - 452016 MP INDIA
+              <h2 class="text-3xl font-bold mb-6">Work with us</h2>
+              <p class="text-gray-700 mb-4 text-justify">
+                As part of our ambitious growth journey, Bansal & Agrawal is continuously on the lookout for talented, driven, and forward-thinking professionals. Our expanding portfolio of services demands a dynamic team with diverse educational and professional backgrounds—individuals who can bring fresh perspectives, innovative ideas, and the agility to adapt to evolving business landscapes.
               </p>
-              <p class="text-gray-700">Email us : <a href="mailto:canuragbansal@gmail.com" class="text-blue-600 ">canuragbansal@gmail.com</a></p>
+              <p class="text-gray-700 mb-4 text-justify">
+                We believe in building a team that thrives on collaboration, integrity, and excellence, and we welcome professionals who are eager to grow with us while making a meaningful impact.
+              </p>
+             
             </div>
-            <div>
-              <h3 class="text-xl font-bold">Call Us</h3>
-              <p class="text-gray-700">0731-2702770, +91 99933 22223, +91 98260 18428</p>
-            </div>
-            <div>
-                <iframe
-                src="https://www.google.com/maps?q=22.702938845803587,75.91365512126467&z=15&output=embed"
-                class="w-full h-[500px] border"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-              </iframe>
+      
+            <!-- Right: Form with Jotform Logo Hidden -->
+            <div class="flex flex-col items-center justify-center border border-dashed border-gray-400 rounded-lg p-8 bg-gray-50">
+                <div class="jotform-container w-full">
+                    <iframe
+                        id="JotFormIFrame-251642474004450"
+                        title="Information Request Form"
+                        onload="window.parent.scrollTo(0,0)"
+                        allowtransparency="true"
+                        allow="geolocation; microphone; camera; fullscreen; payment"
+                        src="https://form.jotform.com/251642474004450"
+                        frameborder="0"
+                        style="min-width:100%;max-width:100%;height:539px;border:none;"
+                        scrolling="no"
+                    >
+                    </iframe>
+                    <!-- White overlay with disclaimer to hide Jotform branding -->
+                    <div class="jotform-overlay m-1">
+                        <div class="jotform-disclaimer">
+                            * We review all applications carefully and will contact qualified candidates.
+                        </div>
+                    </div>
+                </div>
+                <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
+                <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-251642474004450']", "https://form.jotform.com/")</script>
             </div>
           </div>
         </div>
-      </div>
+      </section>
       
-    </section>
 
     <!-- Footer -->
     <footer class="bg-[#286187] text-white py-6 w-full">
