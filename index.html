@@ -4,6 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bansal & Agrawal Chartered Accountants</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Bansal & Agrawal Chartered Accountants - Leading CA firm in Indore offering tax consultation, GST services, income tax filing, audit services, and business advisory. Expert financial consulting for startups and businesses in Madhya Pradesh.">
+    <meta name="keywords" content="Bansal Agarwal, Agarwal Bansal, Bansal & Agrawal, Agarwal & Bansal, A. Bansal, Bansal-Agarwal Associates, Agarwal-Bansal Group, B & A, BNA, Chartered Accountant in Indore, Best CA firm in Indore, Tax consultant in Indore, GST consultant Indore, Accounting and auditing firm in Indore, Income tax filing Indore, CA Anurag Bansal, Bansal & Agrawal Chartered Accountants, Income tax return filing for individuals and businesses, GST registration and return filing, Statutory audit and internal audit services, Company incorporation and compliance services, Bookkeeping and accounting services for startups, Business advisory and financial consulting, TDS return filing, How to file GST returns online in Indore, Affordable CA services for small businesses, Tax planning for salaried individuals in Indore, Financial advisor for startups in Madhya Pradesh, Online income tax filing with CA in Indore, Dic Subsidy, Nabard Subsidy, Hospital Subsidy, AIF">
+    <meta name="author" content="Bansal & Agrawal Chartered Accountants">
+    <meta name="robots" content="index, follow">
+    <meta name="geo.region" content="IN-MP">
+    <meta name="geo.placename" content="Indore">
+    <meta name="geo.position" content="22.7196;75.8577">
+    <meta name="ICBM" content="22.7196, 75.8577">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Bansal & Agrawal Chartered Accountants - Best CA Firm in Indore">
+    <meta property="og:description" content="Expert tax consultation, GST services, and financial advisory in Indore. Trusted CA firm with 25+ years experience.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_IN">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="css/style.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
@@ -75,9 +92,102 @@
         .hamburger.open .line3 {
             transform: rotate(-45deg) translate(7px, -6px);
         }
+        
+        /* Hidden SEO content */
+        .seo-hidden {
+            position: absolute;
+            left: -9999px;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            white-space: nowrap;
+        }
     </style>
 </head>
 <body class="w-full h-full m-0 p-0 bg-gray-50 min-h-screen overflow-x-hidden" x-data="{ mobileMenuOpen: false }">
+    
+    <!-- Hidden SEO Content -->
+    <div class="seo-hidden">
+        <h1>Bansal Agarwal Chartered Accountants Indore</h1>
+        <p>Agarwal Bansal CA firm providing expert tax consultation services in Indore, Madhya Pradesh.</p>
+        <p>A. Bansal - Experienced Chartered Accountant offering GST consultant services, income tax filing, and business advisory.</p>
+        <p>Bansal-Agarwal Associates: Premier accounting and auditing firm specializing in statutory audit, internal audit, and company incorporation services.</p>
+        <p>Agarwal-Bansal Group (B & A, BNA) - Your trusted financial advisor for startups, SMEs, and large enterprises in Indore.</p>
+        <p>Services: Income tax return filing for individuals and businesses, GST registration, TDS return filing, bookkeeping services, Dic Subsidy, Nabard Subsidy, Hospital Subsidy, AIF assistance.</p>
+        <p>CA Anurag Bansal provides affordable CA services for small businesses, tax planning for salaried individuals, and online income tax filing with expert guidance.</p>
+    </div>
+    
+    <!-- Structured Data for Local Business -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AccountingService",
+        "name": "Bansal & Agrawal Chartered Accountants",
+        "alternateName": ["Bansal Agarwal", "Agarwal Bansal", "B & A", "BNA", "Bansal-Agarwal Associates"],
+        "description": "Leading Chartered Accountant firm in Indore offering tax consultation, GST services, audit, and financial advisory with 25+ years experience",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "G-5, Ground Floor, 59-EB, Scheme No. 140",
+            "addressLocality": "Indore",
+            "addressRegion": "Madhya Pradesh",
+            "postalCode": "452016",
+            "addressCountry": "IN"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 22.7196,
+            "longitude": 75.8577
+        },
+        "telephone": ["+91-9993322223", "+91-9826018428", "0731-2702770"],
+        "email": "canuragbansal@gmail.com",
+        "url": "https://www.bansalagrawal.com",
+        "priceRange": "$$",
+        "serviceArea": {
+            "@type": "Place",
+            "name": "Indore, Madhya Pradesh, India"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "CA Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Income Tax Filing",
+                        "description": "Professional income tax return filing for individuals and businesses"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "GST Services",
+                        "description": "GST registration, return filing, and consultation services"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Audit Services",
+                        "description": "Statutory audit and internal audit services for companies"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Subsidy Consultation",
+                        "description": "Dic Subsidy, Nabard Subsidy, Hospital Subsidy, and AIF assistance"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+
     <!-- Header Container -->
     <header class="w-full z-50">
         <!-- Top Header: hides on scroll -->
@@ -87,8 +197,8 @@
                 <div class="flex flex-col space-y-3 md:hidden">
                     <!-- Logo Section (Mobile) -->
                     <div class="flex items-center justify-center gap-3">
-                        <img class="h-12 w-auto" src="https://res.cloudinary.com/dqxsjxmu6/image/upload/v1743246096/j879pjiyypn6r9tmf9aw.jpg" alt="Company Logo">
-                        <img class="h-8 w-auto" src="https://res.cloudinary.com/dqxsjxmu6/image/upload/v1743246140/xjrnuye9zuyjxe5rboeh.jpg" alt="Company Name">
+                        <img class="h-12 w-auto" src="https://res.cloudinary.com/dqxsjxmu6/image/upload/v1743246096/j879pjiyypn6r9tmf9aw.jpg" alt="Bansal & Agrawal Chartered Accountants ">
+                        <img class="h-8 w-auto" src="https://res.cloudinary.com/dqxsjxmu6/image/upload/v1743246140/xjrnuye9zuyjxe5rboeh.jpg" alt="Bansal Agrawal  ">
                     </div>
                     
                     <!-- Contact Info (Mobile) -->
@@ -125,8 +235,8 @@
                 <div class="hidden md:flex items-center justify-between gap-4">
                     <!-- Logo Section (Desktop) -->
                     <div class="flex items-center gap-4">
-                        <img class="h-14 lg:h-16 w-auto" src="https://res.cloudinary.com/dqxsjxmu6/image/upload/v1743246096/j879pjiyypn6r9tmf9aw.jpg" alt="Company Logo">
-                        <img class="h-8 lg:h-10 w-auto" src="https://res.cloudinary.com/dqxsjxmu6/image/upload/v1743246140/xjrnuye9zuyjxe5rboeh.jpg" alt="Company Name">
+                        <img class="h-14 lg:h-16 w-auto" src="https://res.cloudinary.com/dqxsjxmu6/image/upload/v1743246096/j879pjiyypn6r9tmf9aw.jpg" alt="Bansal & Agrawal Chartered Accountants Logo - Tax Consultant in Indore">
+                        <img class="h-8 lg:h-10 w-auto" src="https://res.cloudinary.com/dqxsjxmu6/image/upload/v1743246140/xjrnuye9zuyjxe5rboeh.jpg" alt="Agarwal Bansal CA Firm">
                     </div>
 
                     <!-- Contact Info (Desktop) -->
@@ -167,12 +277,12 @@
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex justify-center items-center">
                     <ul class="flex items-center gap-6 lg:gap-8 py-3 text-white text-sm lg:text-base font-medium">
-                        <li><a href="index.html" class="hover:text-blue-300 transition-colors duration-200 py-2 px-1">Home</a></li>
-                        <li><a href="about.html" class="hover:text-blue-300 transition-colors duration-200 py-2 px-1">About</a></li>
-                        <li><a href="service.html" class="hover:text-blue-300 transition-colors duration-200 py-2 px-1">Services</a></li>
-                        <li><a href="sector.html" class="hover:text-blue-300 transition-colors duration-200 py-2 px-1">Sectors we support</a></li>
-                        <li><a href="team.html" class="hover:text-blue-300 transition-colors duration-200 py-2 px-1">Join our Team</a></li>
-                        <li><a href="contact.html" class="hover:text-blue-300 transition-colors duration-200 py-2 px-1">Contact Us</a></li>
+                        <li><a href="index.html" class="hover:text-blue-300 transition-colors duration-200 py-2 px-1" title="Home - Bansal & Agrawal CA">Home</a></li>
+                        <li><a href="about.html" class="hover:text-blue-300 transition-colors duration-200 py-2 px-1" title="About CA Anurag Bansal">About</a></li>
+                        <li><a href="service.html" class="hover:text-blue-300 transition-colors duration-200 py-2 px-1" title="CA Services in Indore">Services</a></li>
+                        <li><a href="sector.html" class="hover:text-blue-300 transition-colors duration-200 py-2 px-1" title="Industries We Serve">Sectors we support</a></li>
+                        <li><a href="team.html" class="hover:text-blue-300 transition-colors duration-200 py-2 px-1" title="Join Our CA Team">Join our Team</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-300 transition-colors duration-200 py-2 px-1" title="Contact Chartered Accountant Indore">Contact Us</a></li>
                     </ul>
                 </div>
 
@@ -180,7 +290,7 @@
                 <div class="md:hidden flex items-center justify-between py-3">
                     <!-- Mobile Logo (simplified) -->
                     <div class="flex items-center gap-2">
-                        <img class="h-8 w-auto" src="https://res.cloudinary.com/dqxsjxmu6/image/upload/v1743246096/j879pjiyypn6r9tmf9aw.jpg" alt="Company Logo">
+                        <img class="h-8 w-auto" src="https://res.cloudinary.com/dqxsjxmu6/image/upload/v1743246096/j879pjiyypn6r9tmf9aw.jpg" alt="B & A Logo">
                         <span class="text-white font-semibold text-sm">Bansal & Agrawal</span>
                     </div>
 
@@ -239,7 +349,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap lg:flex-nowrap">
             <div class="w-full lg:w-2/3 space-y-8 lg:space-y-10">
                 <div class="flex items-start space-x-4 sm:space-x-6">
-                    <img src="images/index/0f7068_395630413cff44edadb3fd9eacde7779~mv2.png" alt="Corporate Finance Icon" class="w-8 h-8 sm:w-10 sm:h-10 flex-shrink-0"/>
+                    <img src="images/index/0f7068_395630413cff44edadb3fd9eacde7779~mv2.png" alt="Subsidy Consultation Services" class="w-8 h-8 sm:w-10 sm:h-10 flex-shrink-0"/>
                     <div>
                         <h3 class="text-base sm:text-lg font-medium text-gray-700 mb-2">Subsidies Concessions and Incentives</h3>
                         <p class="text-sm text-gray-600 text-justify">Assisting entities in obtaining subsidies, concessions and incentives from state and central government.</p>
@@ -247,7 +357,7 @@
                 </div>
 
                 <div class="flex items-start space-x-4 sm:space-x-6">
-                    <img src="images/index/0f7068_103b601ca3ad4527a66c7d08191a3326~mv2.png" alt="Taxation Icon" class="w-8 h-8 sm:w-10 sm:h-10 flex-shrink-0"/>
+                    <img src="images/index/0f7068_103b601ca3ad4527a66c7d08191a3326~mv2.png" alt="Project Financing Services Icon" class="w-8 h-8 sm:w-10 sm:h-10 flex-shrink-0"/>
                     <div>
                         <h3 class="text-base sm:text-lg font-medium text-gray-700 mb-2">Project Financing</h3>
                         <p class="text-sm text-gray-600 text-justify">Preparation of Detailed Project Reports, CMA and conducting other formalities to get finance for various projects.</p>
@@ -255,7 +365,7 @@
                 </div>
 
                 <div class="flex items-start space-x-4 sm:space-x-6">
-                    <img src="images/index/0f7068_348398c5c5154d008b2d1ccb2ba14463~mv2.png" alt="Audit Icon" class="w-8 h-8 sm:w-10 sm:h-10 flex-shrink-0"/>
+                    <img src="images/index/0f7068_348398c5c5154d008b2d1ccb2ba14463~mv2.png" alt="Taxation Services" class="w-8 h-8 sm:w-10 sm:h-10 flex-shrink-0"/>
                     <div>
                         <h3 class="text-base sm:text-lg font-medium text-gray-700 mb-2">Taxation</h3>
                         <p class="text-sm text-gray-600 text-justify">IT Returns, Assessment(s), Appeals & other Direct and Indirect Taxation matters.</p>
@@ -294,32 +404,74 @@
         <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-8 sm:mb-12">Industries We Serve</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 place-items-center">
             <div class="w-64 h-auto">
-                <img src="images/index/food.jpg" alt="Food Processing" class="w-64 h-32 sm:h-36 object-fill mb-2 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg hover:brightness-110 cursor-pointer">
+                <img src="images/index/food.jpg" alt="Food Processing Industry - CA Services" class="w-64 h-32 sm:h-36 object-fill mb-2 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg hover:brightness-110 cursor-pointer">
                 <p class="text-sm text-gray-700">Food Processing</p>
             </div>
             <div class="w-64 h-auto">
-                <img src="images/index/ware.jpg" alt="Warehousing" class="w-64 h-32 sm:h-36 object-fill mb-2 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg hover:brightness-110 cursor-pointer">
+                <img src="images/index/ware.jpg" alt="Warehousing and Logistics CA Services" class="w-64 h-32 sm:h-36 object-fill mb-2 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg hover:brightness-110 cursor-pointer">
                 <p class="text-sm text-gray-700">Warehousing, Cold Storage and Logistics Hub</p>
             </div>
             <div class="w-64 h-auto">
-                <img src="images/index/Agro.jpg" alt="Agribusiness" class="w-64 h-32 sm:h-36 object-fill mb-2 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg hover:brightness-110 cursor-pointer">
+                <img src="images/index/Agro.jpg" alt="Agribusiness CA Services Indore" class="w-64 h-32 sm:h-36 object-fill mb-2 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg hover:brightness-110 cursor-pointer">
                 <p class="text-sm text-gray-700">Agribusiness Ventures<br>and Agro Marketing</p>
             </div>
             <div class="w-64 h-auto">
-                <img src="images/index/hospital.jpg" alt="Healthcare" class="w-64 h-32 sm:h-36 object-fill mb-2 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg hover:brightness-110 cursor-pointer">
+                <img src="images/index/hospital.jpg" alt="Healthcare Hospital Subsidy Services" class="w-64 h-32 sm:h-36 object-fill mb-2 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg hover:brightness-110 cursor-pointer">
                 <p class="text-sm text-gray-700">Hospitals and<br>Health Sector Industries</p>
             </div>
             <div class="w-64 h-auto">
-                <img src="images/index/images.png" alt="Tourism" class="w-64 h-32 sm:h-36 object-fill mb-2 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg hover:brightness-110 cursor-pointer">
+                <img src="images/index/images.png" alt="Tourism Industry CA Services" class="w-64 h-32 sm:h-36 object-fill mb-2 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg hover:brightness-110 cursor-pointer">
                 <p class="text-sm text-gray-700">Hotels, Resorts<br>and Tourism Industries</p>
             </div>
             <div class="w-64 h-auto">
-                <img src="images/index/download.png" alt="Manufacturing" class="w-64 h-32 sm:h-36 object-fill mb-2 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg hover:brightness-110 cursor-pointer">
+                <img src="images/index/download.png" alt="Manufacturing Industry CA Services" class="w-64 h-32 sm:h-36 object-fill mb-2 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg hover:brightness-110 cursor-pointer">
                 <p class="text-sm text-gray-700">SME and<br>Large Manufacturing Industries</p>
             </div>
         </div>
     </div>
 </section>
+
+    <!-- Additional SEO Content Section -->
+    <section class="hidden w-full bg-gray-50 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Why Choose Bansal & Agrawal Chartered Accountants?</h2>
+                <p class="text-gray-600 max-w-4xl mx-auto text-justify">
+                    As the best CA firm in Indore, we provide comprehensive financial solutions including online income tax filing, GST consultation, 
+                    bookkeeping services for startups, and business advisory services. Our expert team handles everything from company incorporation 
+                    and compliance services to tax planning for salaried individuals in Indore and surrounding areas of Madhya Pradesh.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="font-semibold text-gray-800 mb-2">Expert Tax Planning</h3>
+                    <p class="text-sm text-gray-600">Professional tax planning services for individuals and businesses in Indore with expert guidance on how to file GST returns online.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="font-semibold text-gray-800 mb-2">Affordable CA Services</h3>
+                    <p class="text-sm text-gray-600">Cost-effective chartered accountant services for small businesses, startups, and large enterprises across Madhya Pradesh.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="font-semibold text-gray-800 mb-2">Comprehensive Audit Services</h3>
+                    <p class="text-sm text-gray-600">Statutory audit, internal audit, and compliance services ensuring your business meets all regulatory requirements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comment-based SEO Keywords -->
+    <!-- 
+    Keywords: Bansal Agarwal, Agarwal Bansal, Bansal & Agrawal, Agarwal & Bansal, A. Bansal, Bansal-Agarwal Associates, 
+    Agarwal-Bansal Group, B & A, BNA, Chartered Accountant in Indore, Best CA firm in Indore, Tax consultant in Indore, 
+    GST consultant Indore, Accounting and auditing firm in Indore, Income tax filing Indore, CA Anurag Bansal, 
+    Bansal & Agrawal Chartered Accountants, Income tax return filing for individuals and businesses, GST registration and return filing, 
+    Statutory audit and internal audit services, Company incorporation and compliance services, Bookkeeping and accounting services for startups, 
+    Business advisory and financial consulting, TDS return filing, How to file GST returns online in Indore, 
+    Affordable CA services for small businesses, Tax planning for salaried individuals in Indore, 
+    Financial advisor for startups in Madhya Pradesh, Online income tax filing with CA in Indore, 
+    Dic Subsidy, Nabard Subsidy, Hospital Subsidy, AIF
+    -->
 
     <!-- Footer -->
     <footer class="bg-[#286187] text-white py-6 w-full">
@@ -328,7 +480,7 @@
                 <p class="italic text-lg mb-2">Bansal's</p>
                 <p class="text-sm mb-1">G-5, Ground Floor, 59-EB, Scheme No. 140</p>
                 <p class="text-sm mb-1">Indore – 452016 (Madhya Pradesh) INDIA</p>
-                <p class="text-sm mb-1">Email: <a href="mailto:canuragbansal@gmail.com" class="text-white hover:text-blue-300 transition-colors duration-200">canuragbansal@gmail.com</a></p>
+                <p class="text-sm mb-1">Email: <a href="mailto:canuragbansal@gmail.com" class="text-white hover:text-blue-300 transition-colors duration-200" title="Email CA Anurag Bansal">canuragbansal@gmail.com</a></p>
                 <p class="text-sm">Contact: 0731-2702770, +91 9993322223, +91 9826018428</p>
             </div>
         </div>
